@@ -1,37 +1,24 @@
-GraphRAG with Neo4j - Ontology-Powered Knowledge Graph for Advanced Retrieval 🚀
+## Knowledge Graph creation using Pydantic_AI and Groq (Llama 3.3 70b)
 
-This repository showcases a Graph-based Retrieval-Augmented Generation (RAG) pipeline leveraging Neo4j, OWL ontologies, and RDFS to structure and enhance knowledge retrieval. Using LLMs like Groq's LLaMA-3.3 and OpenAI’s GPT-4o-mini, this system extracts and maps relationships between entities, transforming unstructured text into an insightful, queryable knowledge graph.
+This SubParts focuses on designing and implementing the ontology structure to drive the pydatic Framework for structed output.  Using LLMs like Groq's LLaMA-3.3 and OpenAI’s GPT-4o-mini, this system extracts and maps relationships between entities, transforming unstructured text into an insightful, queryable knowledge graph.
 
-📌 Key Features
+## 🏗️ Pipeline Overview
 
-✅ Ontology-Driven Knowledge Graph - Structured entity relationships with Neo4j & RDFS
-✅ Automated Entity Extraction - AI-powered entity linking via Groq & OpenAI
-✅ Seamless Query Execution - Cypher-powered graph exploration
-✅ Scalable Architecture - Dockerized deployment for efficiency
-✅ RAG-based Contextual Retrieval - Enhancing responses with linked knowledge
+✅ Using Pydantic to validate (force) the schema for Entity Extraction.
+
+## Framework Flow Structure 
+![image](https://github.com/user-attachments/assets/88b703f6-e9d6-475d-a5da-1cc6e4449735)
 
 📂 Dataset
 
 We use an ontology-based approach with structured graph relationships. Data sources include:
 
-Primary Dataset: Dev.to Articles
+Primary Dataset: Dev.to Articles - > Contains 
 
 Ontology Definitions (Turtle File): SKOS-based Metadata
 
 Graph Schema: RDF & OWL-based structuring for better entity representation
 
-🏗️ Pipeline Overview
-
-The flowchart below outlines how data flows from raw text to an enriched knowledge graph for enhanced retrieval:
-
-1️⃣ Data Ingestion - Articles are fetched and preprocessed
-2️⃣ Entity Extraction - Named Entity Recognition (NER) with Groq & OpenAI
-3️⃣ Graph Construction - Neo4j nodes & relationships mapped via Cypher
-4️⃣ Ontology Mapping - Concepts linked using OWL & RDFS schemas
-5️⃣ Query Execution - Cypher queries extract relevant data for retrieval
-6️⃣ Enhanced RAG Pipeline - Graph-enriched responses generated for user queries
-
-📌 Check the Flowchart Image (Attach Image here)
 
 🛠️ Tech Stack
 
@@ -43,7 +30,6 @@ Entity Extraction: Pydantic-AI with structured schema validation
 
 Ontology Frameworks: OWL, RDF, RDFS
 
-Containerization: Docker for Neo4j setup
 
 🔧 Installation & Setup
 
@@ -64,9 +50,6 @@ NEO4J_URL=bolt://localhost:7687
 NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=yourpassword
 
-4️⃣ Start Neo4j with Docker
-
-docker-compose up --build
 
 🚀 Running the Pipeline
 
@@ -88,16 +71,13 @@ Enable structured retrieval for queries
 
 Sample Cypher query to retrieve article bodies:
 
-MATCH (n:Article) RETURN n.body LIMIT 5;
-
 Fetching entity relationships:
+![image](https://github.com/user-attachments/assets/c9b60d34-6120-4469-b36a-976c39b0cb18)
 
-MATCH (e:Entity)-[:refers_to]->(c:Concept) RETURN e, c;
+
 
 📌 Future Enhancements
 
 🚀 Semantic Search Integration - Use vector embeddings for hybrid search
 🔗 Enhanced Ontology Linkage - Improved entity-to-concept mapping
-📈 Dashboard for Graph Visualization - Interactive UI with Neo4j Bloom
-
 
