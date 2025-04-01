@@ -71,8 +71,6 @@ run python vectorstore.py
 ## to run chatbot
 run python query_chat_with_mlflow.py
 
-## Using Docker
-- docker-compose up --build
 
 # Gradio Application
 - Go to port 7860 (local host) for gradio
