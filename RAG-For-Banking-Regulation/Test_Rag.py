@@ -30,7 +30,7 @@ def test_conclusion_and_future_workr():
 
 def test_conclusion_and_future_workr1():
     assert query_and_validate(
-        question = "Explain liquidity Coverage Ratio.?
+        question = "Explain liquidity Coverage Ratio.?"
 ",
         expected_response = "The LCR is intended to promote resilience to potential liquidity disruptions over a thirty day horizon. It will help ensure that global banks have sufficient unencumbered, highquality liquid assets to offset the net cash outflows it could encounter under an acute shortterm stress scenario. The specified scenario is built upon circumstances experienced in the global financial crisis that began in 2007 and entails both institution-specific and systemic shocks.")
 
