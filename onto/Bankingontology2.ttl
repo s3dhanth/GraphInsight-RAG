@@ -1,0 +1,109 @@
+@prefix : <https://neo4j.com/voc/baselII#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix fibo-fbc: <https://spec.edmcouncil.org/fibo/ontology/FBC/> .
+@prefix fibo-be: <https://spec.edmcouncil.org/fibo/ontology/BE/> .
+@prefix fibo-sec: <https://spec.edmcouncil.org/fibo/ontology/SEC/> .
+@base <https://neo4j.com/voc/baselII#> .
+
+<https://neo4j.com/voc/baselII#> rdf:type owl:Ontology ;
+                             rdfs:comment "Simplified Basel II regulatory framework ontology." .
+
+#################################################################
+#    Core Classes
+#################################################################
+
+:Regulation rdf:type owl:Class ;
+            rdfs:subClassOf fibo-fbc:RegulatoryConcept ;
+            rdfs:comment "A regulatory requirement in banking." .
+
+:Risk rdf:type owl:Class ;
+      rdfs:subClassOf fibo-fbc:Risk ;
+      rdfs:comment "Risk categories under Basel II." .
+
+:Financial_Entity rdf:type owl:Class ;
+                 rdfs:subClassOf fibo-be:FinancialEntity ;
+                 rdfs:comment "Entities subject to financial regulation." .
+
+:Regulatory_Body rdf:type owl:Class ;
+                rdfs:subClassOf fibo-fbc:RegulatoryAgency ;
+                rdfs:comment "Authorities overseeing financial regulations." .
+
+:Compliance_Measure rdf:type owl:Class ;
+                   rdfs:subClassOf fibo-fbc:ComplianceRequirement ;
+                   rdfs:comment "Measures ensuring regulatory compliance." .
+
+#################################################################
+#    Object Properties (Relationships)
+#################################################################
+
+:appliesTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :Regulation ;
+           rdfs:range :Financial_Entity ;
+           rdfs:comment "A regulation applies to a financial entity." .
+
+:requires rdf:type owl:ObjectProperty ;
+         rdfs:domain :Risk ;
+         rdfs:range :Compliance_Measure ;
+         rdfs:comment "A risk type requires compliance measures." .
+
+:assessedBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :Financial_Entity ;
+           rdfs:range :Regulatory_Body ;
+           rdfs:comment "A financial entity is assessed by a regulatory body." .
+
+#################################################################
+#    Data Properties (With InverseFunctionalProperty)
+#################################################################
+
+:regulationName rdf:type owl:DatatypeProperty, owl:InverseFunctionalProperty ;
+               rdfs:subPropertyOf schema:name ;
+               rdfs:domain :Regulation ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The official name of the regulation." .
+
+:entityName rdf:type owl:DatatypeProperty , owl:InverseFunctionalProperty ;
+           rdfs:subPropertyOf schema:name ;
+           rdfs:domain :Financial_Entity ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The official name of the financial entity." .
+
+:country rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf schema:addressCountry ;
+        rdfs:domain :Financial_Entity ;
+        rdfs:range xsd:string ;
+        rdfs:comment "The country where the financial entity operates." .
+
+:riskTypeName rdf:type owl:DatatypeProperty , owl:InverseFunctionalProperty ;
+              rdfs:subPropertyOf schema:name ;
+              rdfs:domain :Risk ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The classification of a risk type." .
+:measureName rdf:type owl:DatatypeProperty , owl:InverseFunctionalProperty ;
+            rdfs:subPropertyOf schema:name ;
+            rdfs:domain :Compliance_Measure ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The name of the compliance measure." .
+
+:measureDescription rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Compliance_Measure ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "A description of the compliance measure." .
+
+#################################################################
+#    New Data Properties for Regulatory_Body
+#################################################################
+
+:regulatoryBodyName rdf:type owl:DatatypeProperty , owl:InverseFunctionalProperty ;
+                   rdfs:subPropertyOf schema:name ;
+                   rdfs:domain :Regulatory_Body ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "The official name of the regulatory body." .
+
+:jurisdiction rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Regulatory_Body ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The jurisdiction under which the regulatory body operates." .

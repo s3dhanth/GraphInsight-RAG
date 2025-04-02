@@ -1,0 +1,116 @@
+@prefix : <http://www.semanticweb.org/yourontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Ontology Declaration
+<http://www.semanticweb.org/yourontology> rdf:type owl:Ontology .
+
+### Classes
+:Bank rdf:type owl:Class ;
+      rdfs:label "Bank" ;
+      rdfs:comment "A financial institution that complies with regulations." .
+
+:Regulation rdf:type owl:Class ;
+            rdfs:label "Regulation" ;
+            rdfs:comment "Financial rules and guidelines (e.g., Basel II, Basel III)." .
+
+:Risk rdf:type owl:Class ;
+      rdfs:label "Risk" ;
+      rdfs:comment "Financial uncertainties faced by banks." .
+
+:CreditRisk rdf:type owl:Class ;
+            rdfs:label "CreditRisk" ;
+            rdfs:subClassOf :Risk ;
+            rdfs:comment "Risk of loss due to borrower default." .
+
+:MarketRisk rdf:type owl:Class ;
+            rdfs:label "MarketRisk" ;
+            rdfs:subClassOf :Risk ;
+            rdfs:comment "Risk due to market fluctuations." .
+
+:LiquidityRisk rdf:type owl:Class ;
+               rdfs:label "LiquidityRisk" ;
+               rdfs:subClassOf :Risk ;
+               rdfs:comment "Risk due to insufficient liquid assets." .
+
+:OperationalRisk rdf:type owl:Class ;
+                 rdfs:label "OperationalRisk" ;
+                 rdfs:subClassOf :Risk ;
+                 rdfs:comment "Risk from internal failures." .
+
+:CapitalRequirement rdf:type owl:Class ;
+                    rdfs:label "CapitalRequirement" ;
+                    rdfs:comment "Minimum capital banks must hold." .
+
+:LiquidityStandard rdf:type owl:Class ;
+                   rdfs:label "LiquidityStandard" ;
+                   rdfs:comment "Regulations ensuring sufficient liquidity." .
+
+:StressTesting rdf:type owl:Class ;
+               rdfs:label "StressTesting" ;
+               rdfs:comment "Process to assess financial stability." .
+
+### Object Properties (Relationships)
+:compliesWith rdf:type owl:ObjectProperty ;
+              rdfs:label "compliesWith" ;
+              rdfs:domain :Bank ;
+              rdfs:range :Regulation ;
+              rdfs:comment "A bank complies with a regulation." .
+
+:addresses rdf:type owl:ObjectProperty ;
+           rdfs:label "addresses" ;
+           rdfs:domain :Regulation ;
+           rdfs:range :Risk ;
+           rdfs:comment "A regulation mitigates risk." .
+
+:assessesRisk rdf:type owl:ObjectProperty ;
+              rdfs:label "assessesRisk" ;
+              rdfs:domain :StressTesting ;
+              rdfs:range :Risk ;
+              rdfs:comment "Stress testing is conducted to evaluate risk." .
+
+:requiresCapital rdf:type owl:ObjectProperty ;
+                 rdfs:label "requiresCapital" ;
+                 rdfs:domain :Regulation ;
+                 rdfs:range :CapitalRequirement ;
+                 rdfs:comment "A regulation mandates capital requirements." .
+
+:setsLiquidityStandard rdf:type owl:ObjectProperty ;
+                       rdfs:label "setsLiquidityStandard" ;
+                       rdfs:domain :Regulation ;
+                       rdfs:range :LiquidityStandard ;
+                       rdfs:comment "A regulation sets liquidity rules." .
+
+:hasRisk rdf:type owl:ObjectProperty ;
+         rdfs:label "hasRisk" ;
+         rdfs:domain :Bank ;
+         rdfs:range :Risk ;
+         rdfs:comment "A bank is exposed to financial risks." .
+
+### **Newly Added Data Properties**
+
+:riskDescription rdf:type owl:DatatypeProperty ;
+                 rdfs:label "Risk Description" ;
+                 rdfs:domain :Risk ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Detailed description of the financial risk." .
+
+:capitalAmount rdf:type owl:DatatypeProperty ;
+               rdfs:label "Capital Amount" ;
+               rdfs:domain :CapitalRequirement ;
+               rdfs:range xsd:float ;
+               rdfs:comment "The minimum capital amount required by regulations." .
+
+:liquidityThreshold rdf:type owl:DatatypeProperty ;
+                    rdfs:label "Liquidity Threshold" ;
+                    rdfs:domain :LiquidityStandard ;
+                    rdfs:range xsd:float ;
+                    rdfs:comment "The liquidity standard value banks must maintain." .
+
+:stressTestResult rdf:type owl:DatatypeProperty ;
+                  rdfs:label "Stress Test Result" ;
+                  rdfs:domain :StressTesting ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Outcome of a bank's financial stress test." .
