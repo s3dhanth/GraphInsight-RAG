@@ -8,7 +8,7 @@ The document outlines key regulatory principles and risk management frameworks f
 It discusses capital adequacy requirements, liquidity risk management, and operational risk controls.
 There is an emphasis on Basel III framework, which strengthens capital and liquidity standards.
 
-## Ontology Design (Integreation with FIBO)
+## Ontology Design (Integration with FIBO)
 - Software Used - Protégé
 - Rdfs (From Fibo Git Repository) - contains classes for entities, used for inheritance and comment To ensure integration for Regulation Document
 - Ontology Structure Overview.
