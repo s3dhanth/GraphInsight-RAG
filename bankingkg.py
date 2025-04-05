@@ -10,7 +10,7 @@ from utils import getSchemaFromOnto, getPKs
 from rdflib_neo4j import Neo4jStore, Neo4jStoreConfig, HANDLE_VOCAB_URI_STRATEGY
 NEO4J_URI = "neo4j://localhost:7687"
 NEO4J_USERNAME = "neo4j"
-NEO4J_PASSWORD = "12345678"
+NEO4J_PASSWORD = "your_password"
 import nest_asyncio
 from dotenv import load_dotenv
 import os
@@ -24,11 +24,10 @@ load_dotenv(dotenv_path, override=True)
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
 embedder = OpenAIEmbeddings(model = 'text-embedding-3-small')
 g = Graph()
-#neo4j_schema = getSchemaFromOnto(g.parse(r"C:\upwork_client\compliance_regulatory\session 31\onto\art.ttl"))
-#print(neo4j_schema)
+
 #neo4j_schema2 = getSchemaFromOnto(g.parse(r"C:\Users\ashut\Pictures\newonto.ttl"))
 # Create a Splitter object
-neo4j_schema3 = getSchemaFromOnto(g.parse(r"C:\upwork_client\compliance_regulatory\session 31\onto\Bankingontology2.ttl"))
+neo4j_schema = getSchemaFromOnto(g.parse(r"C:\compliance_regulatory\session 31\onto\Bankingontology2.ttl"))
 splitter = FixedSizeSplitter(chunk_size=2500, chunk_overlap=10)
 
 llm = OpenAILLM(
@@ -40,7 +39,7 @@ llm = OpenAILLM(
     },
 )
 auth_data = {'uri': 'neo4j://localhost:7687',
-             'database': 'banking5',
+             'database': 'your_db',
              'user': NEO4J_USERNAME,
              'pwd': NEO4J_PASSWORD,}
 
@@ -49,12 +48,12 @@ kg_builder = SimpleKGPipeline(
     driver=driver,
     text_splitter=splitter,
     embedder=embedder,
-    entities=list(neo4j_schema3.entities.values()),
-    relations=list(neo4j_schema3.relations.values()),
-    potential_schema=neo4j_schema3.potential_schema,
+    entities=list(neo4j_schema.entities.values()),
+    relations=list(neo4j_schema.relations.values()),
+    potential_schema=neo4j_schema.potential_schema,
     on_error="IGNORE",
     from_pdf=False,
-    neo4j_database='banking5',
+    neo4j_database='your_db',
     perform_entity_resolution=False
 )
 
