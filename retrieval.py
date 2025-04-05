@@ -14,7 +14,7 @@ dotenv_path = os.path.join(r'C:\upwork_client\compliance_regulatory', ".env")
 
 load_dotenv(dotenv_path, override=True)
 URI = "neo4j://localhost:7687"
-AUTH = ("neo4j", "12345678")
+AUTH = ("neo4j", "your_password")
 
 # Connect to Neo4j database
 driver = GraphDatabase.driver(URI, auth=AUTH)
@@ -31,7 +31,7 @@ retriever = Text2CypherRetriever(
     driver=driver,
     llm=llm,  # type: ignore
     neo4j_schema=neo4j_schema3,
-    neo4j_database="banking5"
+    neo4j_database="yourdb"
     
 )
 # Generate a Cypher query using the LLM, send it to the Neo4j database, and return the results
