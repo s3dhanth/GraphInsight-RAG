@@ -48,4 +48,13 @@ A custom Cypher query fetches relationships around extracted entities for knowle
 ### 📍 Entity Models (`pydantic`)
 Defines structured response schema for extracted entities.
 
+## Use LLM to extract entites
+![image](https://github.com/user-attachments/assets/f7dfeabb-9508-4bed-bc32-b0759b102f12)
+## After extraction Find all relations connect to that entity
+![image](https://github.com/user-attachments/assets/6b3ae299-aeeb-4604-9da9-cc072256019c)
+query - What is the primary objective of the principles outlined in this document?
+ 
+![image](https://github.com/user-attachments/assets/c9cb0114-6b4e-4b22-9fe1-cbd399a63400)
+
+
 
