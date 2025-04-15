@@ -101,13 +101,12 @@ streamlit run retrievalapp.py
 
 ## 🧠 Example Queries
 
-- "List articles in TITLE IV"
+- ### "List articles in TITLE IV"
 ![image](https://github.com/user-attachments/assets/7bbfa304-dab2-47b7-976a-2ecd4882f886)
 
-- "articleTitle - Protection of personal data , belongs to which title?"
+- ### "articleTitle - Protection of personal data , belongs to which title?"
 ![image](https://github.com/user-attachments/assets/eff0a209-0109-4b2f-b776-7c7d41c41d3c)
 
-- "Summarize TITLE III"
 
 The app will:
 
