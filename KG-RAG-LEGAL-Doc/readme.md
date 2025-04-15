@@ -30,13 +30,16 @@ GraphRAG is an end-to-end pipeline that extracts structured knowledge from unstr
 
 3. **Ontology Design**
 
-   - Designed in RDF/TTL format (e.g., `charter.ttl`)
+   - Designed in RDF/TTL format (e.g., `charter.ttl`) (protege)
    - Loaded into Neo4j for structured reasoning
 
 4. **Neo4j Graph DB Setup**
 
    - Uses Neo4j Desktop with Data Importer
    - Maps CSV to ontology schema
+![image](https://github.com/user-attachments/assets/7b27b9db-426d-4454-90aa-bb136153ba98)
+
+   
 
 5. **Cypher Query Generation**
 
@@ -54,7 +57,7 @@ GraphRAG is an end-to-end pipeline that extracts structured knowledge from unstr
 ## 📁 Folder Structure
 
 ```
-compliance_regulatory/
+
 ├── legaldoc/
 │   ├── streamlitonto/
 │   │   └── charter.ttl            # Ontology
@@ -78,9 +81,9 @@ pip install streamlit neo4j pandas beautifulsoup4 openai
 
 ### 2. Set up Neo4j
 
-- Launch Neo4j Desktop or Docker container
 - Use the Data Importer to load `titles.csv` and `articles.csv`
 - Apply the ontology (`charter.ttl`) as schema
+![image](https://github.com/user-attachments/assets/69f98cf9-590e-47d1-937c-1d7ad52d34af)
 
 ### 3. Add your environment variables in `.env`
 
@@ -91,7 +94,7 @@ OPENAI_API_KEY=your_openai_key
 ### 4. Launch the Streamlit App
 
 ```bash
-streamlit run app.py
+streamlit run retrievalapp.py
 ```
 
 ---
@@ -99,7 +102,11 @@ streamlit run app.py
 ## 🧠 Example Queries
 
 - "List articles in TITLE IV"
-- "What is Article 7 about?"
+![image](https://github.com/user-attachments/assets/7bbfa304-dab2-47b7-976a-2ecd4882f886)
+
+- "articleTitle - Protection of personal data , belongs to which title?"
+![image](https://github.com/user-attachments/assets/eff0a209-0109-4b2f-b776-7c7d41c41d3c)
+
 - "Summarize TITLE III"
 
 The app will:
@@ -124,11 +131,6 @@ MIT License
 
 ---
 
-## 🤝 Acknowledgements
 
-- [Neo4j](https://neo4j.com/)
-- [Streamlit](https://streamlit.io/)
-- [OpenAI](https://openai.com/)
-- [EU Legal Charter](https://eur-lex.europa.eu/)
 
 
