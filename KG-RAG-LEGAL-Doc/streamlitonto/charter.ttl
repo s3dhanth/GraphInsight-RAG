@@ -1,0 +1,55 @@
+@prefix : <http://example.org/charter#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/charter> rdf:type owl:Ontology .
+
+### CLASSES ###
+
+:Title rdf:type owl:Class ;
+       rdfs:label "Title" ;
+       rdfs:comment "Represents a legal section, e.g., TITLE I" .
+
+:Article rdf:type owl:Class ;
+         rdfs:label "Article" ;
+         rdfs:comment "An article contained within a title." .
+
+### OBJECT PROPERTIES ###
+
+:hasArticle rdf:type owl:ObjectProperty ;
+            rdfs:domain :Title ;
+            rdfs:range :Article ;
+            rdfs:label "has Article" ;
+            rdfs:comment "Relationship from Title to Article" .
+
+### DATA PROPERTIES ###
+
+:titleID rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Title ;
+         rdfs:range xsd:string ;
+         rdfs:label "Title ID" ;
+         rdfs:comment "E.g., 'TITLE I', used for lookup" .
+
+
+:titleName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Title ;
+           rdfs:range xsd:string ;
+           rdfs:label "Title Name" ;
+           rdfs:comment "Descriptive name of the title, e.g., 'Dignity'" .
+
+:articleNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Article ;
+               rdfs:range xsd:string ;
+               rdfs:label "article number" .
+
+:articleTitle rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Article ;
+              rdfs:range xsd:string ;
+              rdfs:label "article title" .
+
+:articleText rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Article ;
+             rdfs:range xsd:string ;
+             rdfs:label "article text" .
