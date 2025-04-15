@@ -1,0 +1,36 @@
+@prefix : <http://example.org/eu_charter#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Title rdf:type rdfs:Class .
+:Article rdf:type rdfs:Class .
+
+:TitleID rdf:type rdf:Property ;
+         rdfs:domain :Title ;
+         rdfs:range xsd:string .
+
+:TitleName rdf:type rdf:Property ;
+           rdfs:domain :Title ;
+           rdfs:range xsd:string .
+
+:ArticleID rdf:type rdf:Property ;
+           rdfs:domain :Article ;
+           rdfs:range xsd:string .
+
+:ArticleNumber rdf:type rdf:Property ;
+               rdfs:domain :Article ;
+               rdfs:range xsd:string .
+
+:ArticleTitle rdf:type rdf:Property ;
+              rdfs:domain :Article ;
+              rdfs:range xsd:string .
+
+:ArticleText rdf:type rdf:Property ;
+             rdfs:domain :Article ;
+             rdfs:range xsd:string .
+
+:hasArticle rdf:type rdf:Property ;
+            rdfs:domain :Title ;
+            rdfs:range :Article ;
+            rdfs:label "Title has Article" .
