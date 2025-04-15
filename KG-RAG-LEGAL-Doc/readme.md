@@ -105,8 +105,7 @@ streamlit run retrievalapp.py
 ![image](https://github.com/user-attachments/assets/7bbfa304-dab2-47b7-976a-2ecd4882f886)
 
 - ### "articleTitle - Protection of personal data , belongs to which title?"
-![image](https://github.com/user-attachments/assets/eff0a209-0109-4b2f-b776-7c7d41c41d3c)
-
+![image](https://github.com/user-attachments/assets/9a9e2956-718a-4eae-a26f-fa96e48568d9)
 
 The app will:
 
