@@ -1,36 +1,49 @@
-@prefix : <http://example.org/eu_charter#> .
+@prefix : <http://example.org/charter#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-:Title rdf:type rdfs:Class .
-:Article rdf:type rdfs:Class .
+<http://example.org/charter> rdf:type owl:Ontology .
 
-:TitleID rdf:type rdf:Property ;
-         rdfs:domain :Title ;
-         rdfs:range xsd:string .
+### CLASSES ###
 
-:TitleName rdf:type rdf:Property ;
-           rdfs:domain :Title ;
-           rdfs:range xsd:string .
+:Title rdf:type owl:Class ;
+       rdfs:label "Title" .
 
-:ArticleID rdf:type rdf:Property ;
-           rdfs:domain :Article ;
-           rdfs:range xsd:string .
+:Article rdf:type owl:Class ;
+         rdfs:label "Article" .
 
-:ArticleNumber rdf:type rdf:Property ;
-               rdfs:domain :Article ;
-               rdfs:range xsd:string .
+### OBJECT PROPERTIES ###
 
-:ArticleTitle rdf:type rdf:Property ;
-              rdfs:domain :Article ;
-              rdfs:range xsd:string .
-
-:ArticleText rdf:type rdf:Property ;
-             rdfs:domain :Article ;
-             rdfs:range xsd:string .
-
-:hasArticle rdf:type rdf:Property ;
+:hasArticle rdf:type owl:ObjectProperty ;
             rdfs:domain :Title ;
             rdfs:range :Article ;
-            rdfs:label "Title has Article" .
+            rdfs:label "has Article" .
+
+### DATA PROPERTIES ###
+
+:titleID rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Title ;
+         rdfs:range xsd:string ;
+         rdfs:label "title ID" .
+
+:titleName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Title ;
+           rdfs:range xsd:string ;
+           rdfs:label "title name" .
+
+:articleNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Article ;
+               rdfs:range xsd:string ;
+               rdfs:label "article number" .
+
+:articleTitle rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Article ;
+              rdfs:range xsd:string ;
+              rdfs:label "article title" .
+
+:articleText rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Article ;
+             rdfs:range xsd:string ;
+             rdfs:label "article text" .
