@@ -17,6 +17,9 @@ GraphRAG is an end-to-end pipeline that extracts structured knowledge from unstr
 
 ---
 
+## Dataset Overview
+- The document is the Charter of Fundamental Rights of the European Union (2012). It outlines the fundamental rights and freedoms protected within the EU, structured into seven titles
+---
 ## 🧱 Architecture
 
 1. **HTML Extraction**
