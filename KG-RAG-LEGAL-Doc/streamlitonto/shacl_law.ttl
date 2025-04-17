@@ -9,6 +9,6 @@ ex:TitleShape
     # Ensure ONLY ex:hasArticle is used from Title
     sh:property [
         sh:path ex:hasArticle ;
-        sh:class ex:Article ;
+        sh:class ex:Title ;
         sh:minCount 1 ; # optional: require at least one article
     ] ;
