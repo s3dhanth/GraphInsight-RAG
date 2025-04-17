@@ -1,11 +1,12 @@
+@prefix ex: <http://example.neo4j.com/graphvalidation#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix : <http://example.org/charter#> .
+@prefix neo4j: <neo4j://graph.schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:TitleNoTitleAsArticle
-    a sh:NodeShape ;
-    sh:targetClass :Title ;
+ex:TitleNoTitleAsArticle a sh:NodeShape ;
+    sh:targetClass neo4j:Title ;  # Validate nodes of class Title
     sh:property [
-        sh:path :hasArticle ;
-        sh:class :Article ;  # ✅ Must be of class Article
+        sh:path neo4j:hasArticle ;  # Validate the hasArticle relation
+        sh:class neo4j:Article ;  # The related node must be an Article
         sh:message "A Title cannot be connected to another Title via hasArticle." ;
-    ] .
+    ] ;
