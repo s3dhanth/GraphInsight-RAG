@@ -7,8 +7,8 @@ ex:TitleShape
     sh:targetClass ex:Title ;
 
     # Ensure ONLY ex:hasArticle is used from Title
-    sh:property [
-        sh:path ex:hasArticle ;
-        sh:class ex:Article ;
-        sh:minCount 1 ; # optional: require at least one article
+     sh:property [
+        sh:path ex:hasArticle ;   # The hasArticle property
+        sh:nodeKind sh:IRI ;      # The target must be an IRI (a node)
+        sh:disjointWith ex:Title ; # The target cannot be of type Title
     ] ;
