@@ -1,13 +1,21 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix ex: <http://example.org/ontology#> .
+@prefix ex: <neo4j://graph.schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 ex:TitleShape
     a sh:NodeShape ;
-    sh:targetClass ex:Title ;
+    sh:targetClass ex:Title ;  # Target nodes of class Title
 
-    # Ensure ONLY ex:hasArticle is used from Title
-     sh:property [
+    # Ensure that Title nodes can have multiple Article nodes connected via hasArticle
+    sh:property [
+        sh:path ex:hasArticle ;   # The hasArticle property
+        sh:class ex:Article ;     # The target should be of class Article
+        sh:minCount 1 ;           # At least one Article must be connected
+        sh:nodeKind sh:IRI ;      # The target must be an IRI (a node) 
+    ] ;
+
+    # Ensure that Title nodes cannot be connected to other Title nodes via hasArticle
+    sh:property [
         sh:path ex:hasArticle ;   # The hasArticle property
         sh:nodeKind sh:IRI ;      # The target must be an IRI (a node)
         sh:disjointWith ex:Title ; # The target cannot be of type Title
