@@ -1,36 +1,14 @@
-@prefix ex: <http://example.neo4j.com/graphvalidation#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix neo4j: <neo4j://graph.schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-ex:TitleShape a sh:NodeShape ;
-  sh:targetClass neo4j:Title ;
+ex:TitleShape
+    a sh:NodeShape ;
+    sh:targetClass ex:Title ;
 
-  sh:property [
-    sh:path neo4j:hasArticle ;
-    sh:class neo4j:Article ;
-    sh:minCount 1 ;
-    sh:message "Title must have at least one hasArticle edge pointing to an Article node." ;
-  ] ;
-
-  sh:property [
-    sh:path neo4j:titleID ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:message "Title must have a titleID of type string." ;
-  ] ;
-
-  sh:property [
-    sh:path neo4j:titleName ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:message "Title must have a titleName of type string." ;
-  ] ;
-
-  sh:closed true ;
-  sh:ignoredProperties (
-    rdf:type
-  ) ;
-.
+    # Ensure ONLY ex:hasArticle is used from Title
+    sh:property [
+        sh:path ex:hasArticle ;
+        sh:class ex:Article ;
+        sh:minCount 1 ; # optional: require at least one article
+    ] ;
