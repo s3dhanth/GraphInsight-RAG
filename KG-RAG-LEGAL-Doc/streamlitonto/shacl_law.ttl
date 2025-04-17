@@ -1,17 +1,40 @@
+@prefix ex: <http://example.neo4j.com/graphvalidation#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix neo4j: <http://example.org/charter#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ex: <http://example.org/ontology#> .
 
-# Shape for Title node
-ex:TitleNodeShape
-  a sh:NodeShape ;
-  sh:targetClass ex:Title ;  # Apply this shape to all nodes of type ex:Title
+ex:TitleShape a sh:NodeShape ;
+  sh:targetClass neo4j:Title ;
 
-# Must have at least one hasArticle pointing to an Article
-sh:property [
-  sh:path ex:hasArticle ;
-  sh:class ex:Article ;    # Ensure target is of type Article
-  sh:minCount 1 ;          # At least one Article must be linked
+  # Enforce hasArticle only points to neo4j:Article
+  sh:property [
+    sh:path neo4j:hasArticle ;
+    sh:class neo4j:Article ;
+    sh:minCount 1 ;
+    sh:message "Title must have at least one hasArticle edge pointing to an Article node." ;
   ] ;
+
+  # Validate titleID (required, string)
+  sh:property [
+    sh:path neo4j:titleID ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Title must have a titleID of type string." ;
+  ] ;
+
+  # Validate titleName (required, string)
+  sh:property [
+    sh:path neo4j:titleName ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Title must have a titleName of type string." ;
+  ] ;
+
+  # Optional: make it a closed shape
+  sh:closed true ;
+  sh:ignoredProperties (
+    rdf:type
+  ) ;
+.
