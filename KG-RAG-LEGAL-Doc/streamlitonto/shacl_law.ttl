@@ -1,32 +1,36 @@
+@prefix ex: <http://example.neo4j.com/graphvalidation#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix neo4j: <neo4j://graph.schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix : <http://example.org/charter#> .
 
-:TitleShape
-  a sh:NodeShape ;
-  sh:targetClass :Title ;
+ex:TitleShape a sh:NodeShape ;
+  sh:targetClass neo4j:Title ;
 
-  # Enforce hasArticle links only to :Article
   sh:property [
-    sh:path :hasArticle ;
-    sh:class :Article ;         # Target must be an instance of :Article
+    sh:path neo4j:hasArticle ;
+    sh:class neo4j:Article ;
     sh:minCount 1 ;
-    sh:message "Each Title must have at least one hasArticle relation pointing to an Article." ;
+    sh:message "Title must have at least one hasArticle edge pointing to an Article node." ;
   ] ;
 
-  # Enforce titleID presence and datatype
   sh:property [
-    sh:path :titleID ;
+    sh:path neo4j:titleID ;
     sh:datatype xsd:string ;
     sh:minCount 1 ;
-    sh:message "Each Title must have a titleID of type string." ;
+    sh:maxCount 1 ;
+    sh:message "Title must have a titleID of type string." ;
   ] ;
 
-  # Enforce titleName presence and datatype
   sh:property [
-    sh:path :titleName ;
+    sh:path neo4j:titleName ;
     sh:datatype xsd:string ;
     sh:minCount 1 ;
-    sh:message "Each Title must have a titleName of type string." ;
-  ] .
+    sh:maxCount 1 ;
+    sh:message "Title must have a titleName of type string." ;
+  ] ;
+
+  sh:closed true ;
+  sh:ignoredProperties (
+    rdf:type
+  ) ;
+.
