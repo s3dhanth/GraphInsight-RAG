@@ -1,0 +1,17 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Shape for Title node
+ex:TitleNodeShape
+  a sh:NodeShape ;
+  sh:targetClass ex:Title ;  # Apply this shape to all nodes of type ex:Title
+
+# Must have at least one hasArticle pointing to an Article
+sh:property [
+  sh:path ex:hasArticle ;
+  sh:class ex:Article ;    # Ensure target is of type Article
+  sh:minCount 1 ;          # At least one Article must be linked
+  ] ;
