@@ -132,6 +132,39 @@ MIT License
 
 ---
 
+---
+
+## 🚀 Phase 2: Introducing Graph Enrichment & Hybrid Retrieval
+
+This phase extends the pipeline with:
+
+- LLM-driven entity extraction
+- Graph-based symbolic retrieval via Neo4j Fulltext indexes
+- Vector-based semantic search using OpenAI embeddings
+- Hybrid retrieval combining graph and vector contexts
+- Natural language response generation via GPT-4o
+
+---
+# 🧠 Phase 2 Features
+
+### ✅ Hybrid Legal Knowledge Retrieval
+
+#### Entity-Aware Graph Scoring
+
+- Extracts entities like `laws`, `actions`, `organizations` using LLM
+- Searches Neo4j `entity_up` fulltext index
+- Traverses `MENTIONS` relationships from matched nodes
+- Builds graph view for RAG prompt
+
+#### Semantic Vector Search
+
+- Embeds text using OpenAI embeddings
+- Stores in Neo4j vector index
+- Retrieves top-k semantically similar chunks to the query
+
+#### Unified RAG Chain
+
+Both graph and vector retrieval are combined in the final prompt:
 
 
 
