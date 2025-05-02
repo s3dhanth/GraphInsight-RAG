@@ -166,5 +166,6 @@ This phase extends the pipeline with:
 
 Both graph and vector retrieval are combined in the final prompt:
 
+https://github.com/user-attachments/assets/8ad18417-f84a-4985-8e6b-0227418d10e5
 
 
