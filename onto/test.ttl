@@ -1,0 +1,22 @@
+@prefix ex: <http://example.org/ontology#> .
+
+<http://example.org/GLBA> a ex:DocumentType ;
+    ex:hasChunkingStrategy <http://example.org/BySection> ;
+    ex:hasExampleChunk "Section 501: Protection of Info" .
+
+<http://example.org/NIST800-53> a ex:DocumentType ;
+    ex:hasChunkingStrategy <http://example.org/ByControlIDAndEnhancements> ;
+    ex:hasExampleChunk "AC-2: Account Management" .
+
+<http://example.org/AuditReports> a ex:DocumentType ;
+    ex:hasChunkingStrategy <http://example.org/ByFindingSummaryRecommendations> ;
+    ex:hasExampleChunk "Unauthorized access incidents in 2023..." .
+
+<http://example.org/BySection> a ex:ChunkingStrategy ;
+    ex:strategyLabel "By Section" .
+
+<http://example.org/ByControlIDAndEnhancements> a ex:ChunkingStrategy ;
+    ex:strategyLabel "By Control ID and enhancements" .
+
+<http://example.org/ByFindingSummaryRecommendations> a ex:ChunkingStrategy ;
+    ex:strategyLabel "By Finding, Summary, Recommendations" .
