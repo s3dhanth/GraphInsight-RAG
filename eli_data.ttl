@@ -1,0 +1,721 @@
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix ns1: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.europa.eu/eli/C/2025/672/oj#DemoModal02Title> ns1:role ns1:heading .
+
+<http://data.europa.eu/eli/C/2025/672/oj#PP2> ns1:role ns1:tab .
+
+<http://data.europa.eu/eli/C/2025/672/oj#PP2Contents> ns1:role ns1:tabpanel .
+
+<http://data.europa.eu/eli/C/2025/672/oj#PP3> ns1:role ns1:tab .
+
+<http://data.europa.eu/eli/C/2025/672/oj#PP3Contents> ns1:role ns1:tabpanel .
+
+<http://data.europa.eu/eli/C/2025/672/oj#PP4> ns1:role ns1:tab .
+
+<http://data.europa.eu/eli/C/2025/672/oj#PP4Contents> ns1:role ns1:tabpanel .
+
+<http://data.europa.eu/eli/C/2025/672/oj#exp-feautre-js-warning-box> ns1:role ns1:alert .
+
+<http://data.europa.eu/eli/C/2025/672/oj#language-list-overlay> ns1:role ns1:dialog .
+
+<http://data.europa.eu/eli/C/2025/672/oj#myModal> ns1:role ns1:dialog .
+
+<http://data.europa.eu/eli/C/2025/672/oj/bul/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/bul> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/bul/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/bul> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/bul/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/bul> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ces/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ces> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ces/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ces> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ces/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ces> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/dan/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/dan> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/dan/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/dan> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/dan/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/dan> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/deu/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/deu> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/deu/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/deu> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/deu/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/deu> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ell/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ell> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ell/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ell> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ell/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ell> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/eng/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/eng> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/eng/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/eng> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/eng/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/eng> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/est/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/est> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/est/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/est> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/est/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/est> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/fin/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/fin> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/fin/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/fin> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/fin/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/fin> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/fra/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/fra> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/fra/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/fra> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/fra/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/fra> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/gle/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/gle> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/gle/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/gle> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/gle/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/gle> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/hrv/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/hrv> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/hrv/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/hrv> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/hrv/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/hrv> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/hun/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/hun> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/hun/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/hun> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/hun/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/hun> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ita/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ita> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ita/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ita> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ita/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ita> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/lav/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/lav> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/lav/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/lav> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/lav/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/lav> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/lit/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/lit> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/lit/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/lit> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/lit/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/lit> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/mlt/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/mlt> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/mlt/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/mlt> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/mlt/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/mlt> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/nld/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/nld> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/nld/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/nld> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/nld/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/nld> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/pol/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/pol> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/pol/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/pol> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/pol/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/pol> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/por/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/por> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/por/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/por> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/por/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/por> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ron/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ron> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ron/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ron> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ron/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/ron> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/slk/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/slk> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/slk/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/slk> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/slk/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/slk> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/slv/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/slv> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/slv/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/slv> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/slv/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/slv> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/spa/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/spa> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/spa/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/spa> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/spa/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/spa> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/swe/fmx4> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/swe> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.fmx4> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/swe/pdfa2a> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/swe> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/pdf;type=pdfa2a> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.pdfa2a> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/swe/xhtml> a eli:Format ;
+    eli:embodies <http://data.europa.eu/eli/C/2025/672/oj/swe> ;
+    eli:format <http://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+    eli:is_exemplified_by <http://data.europa.eu/eli/C/2025/672/.xhtml> ;
+    eli:publisher_agent <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+
+<http://data.europa.eu/eli/C/2025/672/oj/bul> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/bul/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/bul/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/bul/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/BUL> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Известие на вниманието на лицата, спрямо които се прилагат ограничителните мерки, предвидени в Решение (ОВППС) 2019/797 на Съвета, изменено с Решение (ОВППС) 2025/171 на Съвета, и в Регламент (ЕС) 2019/796 на Съвета, прилаган с Регламент за изпълнение (ЕС) 2025/173 на Съвета относно ограничителни мерки срещу кибератаки, застрашаващи Съюза или неговите държави членки"@bg .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ces> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/ces/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ces/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ces/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/CES> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Oznámení určené osobám, na něž se vztahují omezující opatření stanovená rozhodnutím Rady (SZBP) 2019/797 ve znění rozhodnutí Rady (SZBP) 2025/171 a nařízením Rady (EU) 2019/796, prováděným prováděcím nařízením Rady (EU) 2025/173, o omezujících opatřeních proti kybernetickým útokům ohrožujícím Unii nebo její členské státy"@cs .
+
+<http://data.europa.eu/eli/C/2025/672/oj/dan> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/dan/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/dan/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/dan/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/DAN> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Bekendtgørelse til de personer, der er omfattet af de restriktive foranstaltninger i Rådets afgørelse (FUSP) 2019/797 som ændret ved Rådets afgørelse (FUSP) 2025/171 og i Rådets forordning (EU) 2019/796 som gennemført ved Rådets gennemførelsesforordning (EU) 2025/173 om restriktive foranstaltninger til bekæmpelse af cyberangreb, der truer Unionen eller dens medlemsstater"@da .
+
+<http://data.europa.eu/eli/C/2025/672/oj/deu> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/deu/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/deu/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/deu/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/DEU> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Mitteilung an die Personen, die den restriktiven Maßnahmen nach dem Beschluss (GASP) 2019/797 des Rates, geändert durch den Beschluss (GASP) 2025/171 des Rates, und der Verordnung (EU) 2019/796 des Rates, durchgeführt durch die Durchführungsverordnung (EU) 2025/173 des Rates, über restriktive Maßnahmen gegen Cyberangriffe, die die Union oder ihre Mitgliedstaaten bedrohen, unterliegen"@de .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ell> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/ell/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ell/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ell/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/ELL> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Ανακοίνωση υπόψιν των προσώπων έναντι των οποίων εφαρμόζονται τα περιοριστικά μέτρα που προβλέπονται στην απόφαση (ΚΕΠΠΑ) 2019/797 του Συμβουλίου, όπως τροποποιήθηκε με την απόφαση (ΚΕΠΠΑ) 2025/171 του Συμβουλίου, και στον κανονισμό (ΕΕ) 2019/796 του Συμβουλίου, όπως εφαρμόζεται με τον εκτελεστικό κανονισμό (ΕΕ) 2025/173 του Συμβουλίου για την επιβολή περιοριστικών μέτρων κατά των κυβερνοεπιθέσεων που απειλούν την Ένωση ή τα κράτη μέλη της"@el .
+
+<http://data.europa.eu/eli/C/2025/672/oj/eng> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/eng/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/eng/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/eng/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Notice for the attention of the persons subject to the restrictive measures provided for in Council Decision (CFSP) 2019/797, as amended by Council Decision (CFSP) 2025/171, and in Council Regulation (EU) 2019/796, as implemented by Council Implementing Regulation (EU) 2025/173 restrictive measures against cyber-attacks threatening the Union or its Member States"@en .
+
+<http://data.europa.eu/eli/C/2025/672/oj/est> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/est/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/est/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/est/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/EST> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Teatis isikutele, kelle suhtes kohaldatakse piiravaid meetmeid, mis on sätestatud liitu või selle liikmesriike ähvardavate küberrünnete takistamiseks kehtestatud piiravaid meetmeid käsitlevas nõukogu otsuses (ÜVJP) 2019/797, mida on muudetud nõukogu otsusega (ÜVJP) 2025/171, ja nõukogu määruses (EL) 2019/796, mida rakendatakse nõukogu rakendusmäärusega (EL) 2025/173"@et .
+
+<http://data.europa.eu/eli/C/2025/672/oj/fin> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/fin/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/fin/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/fin/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/FIN> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Ilmoitus henkilöille, joihin sovelletaan unionia tai sen jäsenvaltioita uhkaavien kyberhyökkäysten vastaisista rajoittavista toimenpiteistä annetuissa neuvoston päätöksessä (YUTP) 2019/797, sellaisena kuin se on muutettuna neuvoston päätöksellä (YUTP) 2025/171, ja neuvoston asetuksessa (EU) 2019/796, sellaisena kuin se on pantu täytäntöön neuvoston täytäntöönpanoasetuksella (EU) 2025/173, säädettyjä rajoittavia toimenpiteitä"@fi .
+
+<http://data.europa.eu/eli/C/2025/672/oj/fra> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/fra/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/fra/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/fra/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/FRA> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Avis à l'attention des personnes faisant l'objet des mesures restrictives prévues par la décision (PESC) 2019/797 du Conseil, modifiée par la décision (PESC) 2025/171 du Conseil, et par le règlement (UE) 2019/796 du Conseil, mis en œuvre par le règlement d'exécution (UE) 2025/173 du Conseil concernant des mesures restrictives contre les cyberattaques qui menacent l'Union ou ses États membres"@fr .
+
+<http://data.europa.eu/eli/C/2025/672/oj/gle> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/gle/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/gle/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/gle/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/GLE> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Fógra le haghaidh na ndaoine atá faoi réir na mbeart sriantach dá bhforáiltear i gCinneadh (CBES) 2019/797 ón gComhairle, arna leasú le Cinneadh (CBES) 2025/171 ón gComhairle, agus i Rialachán (AE) 2019/796 ón gComhairle, arna chur chun feidhme le Rialachán Cur Chun Feidhme (AE) 2025/173 ón gComhairle a bhaineann le bearta sriantacha i gcoinne cibirionsaithe lena mbagraítear ar an Aontas nó ar a Bhallstáit"@ga .
+
+<http://data.europa.eu/eli/C/2025/672/oj/hrv> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/hrv/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/hrv/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/hrv/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/HRV> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Obavijest osobama na koje se primjenjuju mjere ograničavanja predviđene Odlukom Vijeća (ZVSP) 2019/797, kako je izmijenjena Odlukom Vijeća (ZVSP) 2025/171, i Uredbom Vijeća (EU) 2019/796, kako je provedena Provedbenom uredbom Vijeća (EU) 2025/173 o mjerama ograničavanja protiv kibernapada koji predstavljaju prijetnju Uniji ili njezinim državama članicama"@hr .
+
+<http://data.europa.eu/eli/C/2025/672/oj/hun> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/hun/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/hun/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/hun/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/HUN> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Értesítés a (KKBP) 2025/171 tanácsi határozattal módosított, az Uniót vagy annak tagállamait fenyegető kibertámadások elleni korlátozó intézkedésekről szóló (KKBP) 2019/797 tanácsi határozatban és az (EU) 2025/173 tanácsi végrehajtási rendelettel végrehajtott, az Uniót vagy annak tagállamait fenyegető kibertámadások elleni korlátozó intézkedésekről szóló (EU) 2019/796 tanácsi rendeletben előírt korlátozó intézkedések hatálya alá tartozó személyek részére"@hu .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ita> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/ita/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ita/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ita/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Avviso all'attenzione delle persone oggetto delle misure restrittive di cui alla decisione (PESC) 2019/797 del Consiglio, modificata dalla decisione (PESC) 2025/171 del Consiglio, e al regolamento (UE) 2019/796 del Consiglio, attuato dal regolamento di esecuzione (UE) 2025/173 del Consiglio, concernenti misure restrittive contro gli attacchi informatici che minacciano l'Unione o i suoi Stati membri"@it .
+
+<http://data.europa.eu/eli/C/2025/672/oj/lav> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/lav/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/lav/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/lav/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/LAV> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Paziņojums to personu ievērībai, kurām piemēro ierobežojošos pasākumus, kas paredzēti Padomes Lēmumā (KĀDP) 2019/797, kuru groza ar Padomes Lēmumu (KĀDP) 2025/171, un Padomes Regulā (ES) 2019/796, ko īsteno ar Padomes Īstenošanas regulu (ES) 2025/173, par ierobežojošiem pasākumiem pret kiberuzbrukumiem, kuri apdraud Savienību vai tās dalībvalstis"@lv .
+
+<http://data.europa.eu/eli/C/2025/672/oj/lit> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/lit/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/lit/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/lit/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/LIT> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Pranešimas asmenims, kuriems taikomos Tarybos sprendime (BUSP) 2019/797 dėl ribojamųjų priemonių, skirtų kovai su Sąjungai ar jos valstybėms narėms gresiančiais kibernetiniais išpuoliais, su pakeitimais, padarytais Tarybos sprendimu (BUSP) 2025/171, ir Tarybos reglamente (ES) 2019/796 dėl ribojamųjų priemonių, skirtų kovai su kibernetiniais išpuoliais, keliančiais grėsmę Sąjungai arba jos valstybėms narėms, kuris įgyvendinamas Tarybos įgyvendinimo reglamentu (ES) 2025/173, numatytos ribojamosios priemonės"@lt .
+
+<http://data.europa.eu/eli/C/2025/672/oj/mlt> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/mlt/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/mlt/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/mlt/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/MLT> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Avviż għall-attenzjoni tal-persuni soġġetti għall-miżuri restrittivi previsti fid-Deċiżjoni tal-Kunsill (PESK) 2019/797, kif emendata bid-Deċiżjoni tal-Kunsill (PESK) 2025/171, u fir-Regolament tal-Kunsill (UE) 2019/796, kif implimentat bir-Regolament ta' Implimentazzjoni tal-Kunsill (UE) 2025/173 dwar miżuri restrittivi kontra attakki ċibernetiċi li jheddu lill-Unjoni jew l-Istati Membri tagħha"@mt .
+
+<http://data.europa.eu/eli/C/2025/672/oj/nld> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/nld/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/nld/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/nld/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/NLD> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Kennisgeving aan de personen die onderworpen zijn aan de beperkende maatregelen van Besluit (GBVB) 2019/797 van de Raad, als gewijzigd bij Besluit (GBVB) 2025/171 van de Raad, en van Verordening (EU) 2019/796 van de Raad, als uitgevoerd bij Uitvoeringsverordening (EU) 2025/173 van de Raad, betreffende beperkende maatregelen tegen cyberaanvallen die de Unie of haar lidstaten bedreigen"@nl .
+
+<http://data.europa.eu/eli/C/2025/672/oj/pol> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/pol/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/pol/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/pol/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/POL> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Ogłoszenie skierowane do osób objętych środkami ograniczającymi przewidzianymi w decyzji Rady (WPZiB) 2019/797, zmienionej decyzją Rady (WPZiB) 2025/171, i w rozporządzeniu Rady (UE) 2019/796, wykonywanym rozporządzeniem wykonawczym Rady (UE) 2025/173, w sprawie środków ograniczających w celu zwalczania cyberataków zagrażających Unii lub jej państwom członkowskim"@pl .
+
+<http://data.europa.eu/eli/C/2025/672/oj/por> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/por/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/por/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/por/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Aviso à atenção das pessoas sujeitas às medidas restritivas previstas na Decisão (PESC) 2019/797 do Conselho, com a redação que lhe foi dada pela Decisão (PESC) 2025/171 do Conselho, e no Regulamento (UE) 2019/796 do Conselho, executado pelo Regulamento de Execução (UE) 2025/173 do Conselho, relativos a medidas restritivas contra os ciberataques que constituem uma ameaça para a União ou os seus Estados-Membros"@pt .
+
+<http://data.europa.eu/eli/C/2025/672/oj/ron> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/ron/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ron/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ron/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/RON> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Aviz în atenția persoanelor cărora li se aplică măsurile restrictive prevăzute în Decizia (PESC) 2019/797 a Consiliului, astfel cum a fost modificată prin Decizia (PESC) 2025/171 a Consiliului, și în Regulamentul (UE) 2019/796 al Consiliului, astfel cum este pus în aplicare prin Regulamentul de punere în aplicare (UE) 2025/173 al Consiliului privind măsuri restrictive împotriva atacurilor cibernetice care reprezintă o amenințare la adresa Uniunii sau a statelor sale membre"@ro .
+
+<http://data.europa.eu/eli/C/2025/672/oj/slk> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/slk/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/slk/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/slk/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/SLK> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Oznámenie určené osobám, na ktoré sa vzťahujú reštriktívne opatrenia ustanovené v rozhodnutí Rady (SZBP) 2019/797 zmenenom rozhodnutím Rady (SZBP) 2025/171 a v nariadení Rady (EÚ) 2019/796 vykonávanom vykonávacím nariadením Rady (EÚ) 2025/173 o reštriktívnych opatreniach proti kybernetickým útokom ohrozujúcim Úniu alebo jej členské štáty"@sk .
+
+<http://data.europa.eu/eli/C/2025/672/oj/slv> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/slv/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/slv/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/slv/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/SLV> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Obvestilo osebam, za katere veljajo omejevalni ukrepi iz Sklepa Sveta (SZVP) 2019/797, kot je bil spremenjen s Sklepom Sveta (SZVP) 2025/171, in iz Uredbe Sveta (EU) 2019/796, kot se izvaja z Izvedbeno uredbo Sveta (EU) 2025/173 o omejevalnih ukrepih proti kibernetskim napadom, ki ogrožajo Unijo ali njene države članice"@sl .
+
+<http://data.europa.eu/eli/C/2025/672/oj/spa> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/spa/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/spa/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/spa/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/SPA> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Anuncio a la atención de las personas sujetas a las medidas restrictivas establecidas en la Decisión (PESC) 2019/797 del Consejo, modificada por la Decisión (PESC) 2025/171 del Consejo, y en el Reglamento (UE) 2019/796 del Consejo, aplicado por el Reglamento de Ejecución (UE) 2025/173 del Consejo, relativos a medidas restrictivas contra los ciberataques que amenacen a la Unión o a sus Estados miembros"@es .
+
+<http://data.europa.eu/eli/C/2025/672/oj/swe> a eli:LegalExpression ;
+    eli:is_embodied_by <http://data.europa.eu/eli/C/2025/672/oj/swe/fmx4>,
+        <http://data.europa.eu/eli/C/2025/672/oj/swe/pdfa2a>,
+        <http://data.europa.eu/eli/C/2025/672/oj/swe/xhtml> ;
+    eli:language <http://publications.europa.eu/resource/authority/language/SWE> ;
+    eli:realizes <http://data.europa.eu/eli/C/2025/672/oj> ;
+    eli:title "Meddelande till de personer som omfattas av de restriktiva åtgärder som föreskrivs i rådets beslut (Gusp) 2019/797, ändrat genom rådets beslut (Gusp) 2025/171, och i rådets förordning (EU) 2019/796, genomförd genom rådets genomförandeförordning (EU) 2025/173 om restriktiva åtgärder mot cyberattacker som hotar unionen eller dess medlemsstater"@sv .
+
+<http://data.europa.eu/eli/C/2025/672/oj> a eli:LegalResource ;
+    eli:cites <http://data.europa.eu/eli/treaty/tfeu_2016/art_263/oj>,
+        <http://data.europa.eu/eli/treaty/tfeu_2016/art_275/oj> ;
+    eli:date_document "2025-01-28"^^xsd:date ;
+    eli:id_local "52025XG00672" ;
+    eli:is_about <http://eurovoc.europa.eu/2338>,
+        <http://eurovoc.europa.eu/3027>,
+        <http://eurovoc.europa.eu/3483>,
+        <http://eurovoc.europa.eu/3870>,
+        <http://eurovoc.europa.eu/c_04ae3ba8>,
+        <http://eurovoc.europa.eu/c_1c478aa5>,
+        <http://eurovoc.europa.eu/c_4e75f061>,
+        <http://eurovoc.europa.eu/c_c3185a19> ;
+    eli:is_realized_by <http://data.europa.eu/eli/C/2025/672/oj/bul>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ces>,
+        <http://data.europa.eu/eli/C/2025/672/oj/dan>,
+        <http://data.europa.eu/eli/C/2025/672/oj/deu>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ell>,
+        <http://data.europa.eu/eli/C/2025/672/oj/eng>,
+        <http://data.europa.eu/eli/C/2025/672/oj/est>,
+        <http://data.europa.eu/eli/C/2025/672/oj/fin>,
+        <http://data.europa.eu/eli/C/2025/672/oj/fra>,
+        <http://data.europa.eu/eli/C/2025/672/oj/gle>,
+        <http://data.europa.eu/eli/C/2025/672/oj/hrv>,
+        <http://data.europa.eu/eli/C/2025/672/oj/hun>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ita>,
+        <http://data.europa.eu/eli/C/2025/672/oj/lav>,
+        <http://data.europa.eu/eli/C/2025/672/oj/lit>,
+        <http://data.europa.eu/eli/C/2025/672/oj/mlt>,
+        <http://data.europa.eu/eli/C/2025/672/oj/nld>,
+        <http://data.europa.eu/eli/C/2025/672/oj/pol>,
+        <http://data.europa.eu/eli/C/2025/672/oj/por>,
+        <http://data.europa.eu/eli/C/2025/672/oj/ron>,
+        <http://data.europa.eu/eli/C/2025/672/oj/slk>,
+        <http://data.europa.eu/eli/C/2025/672/oj/slv>,
+        <http://data.europa.eu/eli/C/2025/672/oj/spa>,
+        <http://data.europa.eu/eli/C/2025/672/oj/swe> ;
+    eli:passed_by <http://publications.europa.eu/resource/authority/corporate-body/CONSIL> ;
+    eli:type_document <http://publications.europa.eu/resource/authority/resource-type/ANNOUNC> ;
+    eli:uri_schema <http://data.europa.eu/eli/%7Btypedoc%7D/%7Byear%7D/%7Bnatural_number%7D/oj> .
+
+[] ns1:role ns1:document .
+
+[] ns1:role ns1:heading .
+
+[] ns1:role ns1:img .
+
+[] ns1:role ns1:button .
+
+[] ns1:role ns1:img .
+
+[] ns1:role ns1:img .
+
+[] ns1:role ns1:img .
+
+[] ns1:role ns1:group .
+
+[] ns1:role ns1:heading .
+
+[] ns1:role ns1:menu .
+
+[] ns1:role ns1:separator .
+
+[] ns1:role ns1:tablist .
+
+[] ns1:role ns1:heading .
+
+[] ns1:role ns1:img .
+
+[] ns1:role ns1:heading .
+
+[] ns1:role ns1:heading .
+
